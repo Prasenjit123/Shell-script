@@ -1,0 +1,18 @@
+#!/bin/sh
+
+Name="Ajay";
+echo "Name is: $Name"
+readonly Name
+Name="Bijay" 
+echo "Name is: $Name"
+
+unset Name
+echo "Name is: $Name"
+
+echo "process ID: $$"
+echo "Argumen 1: $0"
+echo "Argumen 2: $2"
+echo "Argumen 3: $3"
+echo "All arguments: $*"
+echo ""All arguments: $@"
+echo "Total Number of arguments: $#"
