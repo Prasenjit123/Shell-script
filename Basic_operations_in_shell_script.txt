@@ -1,6 +1,5 @@
-#                             Online Bash Shell.
-#                 Code, Compile, Run and Debug Bash script online.
-# Write your code in this editor and press "Run" button to execute it.
+# Bourne shell didn't originally have any mechanism to perform simple arithmetic operations 
+# but it uses external programs, either awk or expr.
 
 #!/bin/Bash
 
