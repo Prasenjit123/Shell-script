@@ -1,0 +1,53 @@
+# LOGICAL OPERATIONS
+
+# Whether a is greater than 10 or not as well as b is less than 20 or not
+
+read -p 'Enter the value of a ' a
+read -p 'Enter the value of b ' b
+
+if [ $a -gt 10 -a $b -lt 20 ]
+then
+    echo "Yes a>10 and b<20"
+else
+    echo "Either a is not >10 or b is not less than 20"
+fi
+
+if [ $a -gt 10 -o $b -lt 20 ]
+then
+    echo "Yes a>10 or b<20"
+else
+    echo "a is not greater than 10 as well as b is not less than 20"
+fi
+
+# STRING OPERATIONS
+
+a='xyz'
+b='abc'
+
+if [ $a = $b ]
+then
+    echo "a and b are same"
+else
+    echo "a and b are not same"
+fi   
+
+if [ $a ]
+then
+    echo "a is not empty"
+else
+    echo "a is empty"
+fi 
+
+if [ -z $a ]
+then
+    echo "size of a is zero"
+else
+    echo "size of a is not zero"
+fi 
+
+if [ -n $a ]
+then
+    echo "a is not empty"
+else
+    echo "a is empty"
+fi 
