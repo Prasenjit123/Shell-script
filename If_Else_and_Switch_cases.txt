@@ -1,0 +1,33 @@
+# if...elif...else...fi demonstration 
+# if the marks of a student is <30, then "bad" again if the the marks is>=30
+#as well as marks<60 then "good", if marks>=60 "very good"
+
+read -p 'Enter the marks ' marks
+
+if(($marks>=0 & $marks<30))
+then
+    echo "Fail"
+elif(($marks>=30 & $marks<60))
+then
+    echo "Good"
+elif(($marks>=60 & $marks<=100)) 
+then
+    echo "Very Good"
+else
+  echo "Invalid Marks"  
+fi 
+
+###################################
+# Switch Case demonstration
+#identification of a fruit 
+
+read -p 'Enter the name of a fruit '  fruit
+
+case "$fruit" in 
+	"apple") echo "This is an apple" ;;
+	"banana") echo "This is a banana" ;;
+	"orange") echo "This is an orange" ;;
+	*)
+	echo "fruit not known" ;;
+esac
+
