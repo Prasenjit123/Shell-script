@@ -1,0 +1,45 @@
+#While loop
+a=0
+while(($a<5))
+do
+	echo $a
+	a=$((a + 1))
+done
+
+#For loop
+for a in 0 1 2 3 4
+do
+   echo $a
+done
+
+#Until loop
+a=0
+until(($a >= 5))
+do
+   echo $a
+   a=$((a + 1))
+done
+
+#Select loop
+select Department in CSE ECE EE ME none
+#maps  CSE-->1 ECE-->1 EE-->1 ME-->4 none-->5
+do
+   case $Department in
+      CSE) 
+         echo "You are from CSE";;
+      ECE) 
+         echo "You are from ECE";;
+      EE) 
+         echo "You are from EE";;         
+      ME) 
+         echo "You are from ME";;
+      none) 
+         echo "exit" 
+	   break;;
+      *) echo "Invalid choice";;
+   esac
+done
+
+
+
+
